@@ -7,7 +7,7 @@ import { PeopleModule } from './people/people.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, TabsModule, PeopleModule],
+  imports: [BrowserModule, PeopleModule, TabsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

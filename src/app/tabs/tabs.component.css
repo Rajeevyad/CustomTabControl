@@ -59,3 +59,9 @@
     position: relative;
     display: block;
   }
+
+  .tab-close {
+    color: gray;
+    text-align: right;
+    cursor: pointer;
+  }

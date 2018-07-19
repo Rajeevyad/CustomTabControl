@@ -5,6 +5,7 @@
 
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { People } from './people-interface';
 
 @Component({
   selector: 'app-person-edit',
@@ -33,7 +34,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class PersonEditComponent implements OnInit {
   personForm: FormGroup;
 
-  @Input() person;
+  @Input() person:People;
   @Output() savePerson = new EventEmitter<any>();
 
   constructor(private fb: FormBuilder) {
